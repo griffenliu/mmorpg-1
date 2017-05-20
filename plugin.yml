@@ -1,0 +1,9 @@
+name: Mmorpg
+version: 0.1.1a
+author: timothe_2000
+main: fr.timothe_2000.Mmorpg.Main
+depend: [ProtocolLib, ArmorEquipEvent]
+commands:
+  mmorpg:
+    usage: /mmorpg <commande>
+    description: L'ensemble des commandes du plugin mmorpg.

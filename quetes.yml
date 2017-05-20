@@ -1,0 +1,87 @@
+quests:
+  list:
+    - BIEN_DEBUTER
+    - PREMIER_COMBAT
+    - PERMIER_METIER
+  QUI_SUIS_JE:
+    name: "§a§lQui suis-je ?"
+    lvl-mini: 1
+    gifts:
+      xp: 0
+      money: 0
+    steps:
+      nb: 2
+      '1':
+        type: auto
+        npc: Fiskero
+        data: conv_bonjour_inconnu
+      '2':
+        type: speak
+        npc: Fiskero
+        data: conv_intro_jeu
+  PREMIER_COMBAT:
+    name: "§a§lPremier combat"
+    lvl-mini: 1
+    gifts:
+      xp: 100
+      money: 5
+    steps:
+      nb: '2'
+      '1':
+        type: auto
+        npc: Derlef
+        data: parler_premier_combat
+      '2':
+        type: kill
+        npc: Derlef
+        data: "Zombie errant"
+  PREMIER_METIER:
+    name: "§a§lPremier métier"
+    lvl-mini: 1
+    gifts:
+      xp: 100
+      money: 10
+    steps:
+      nb: '5'
+      '1':
+        type: auto
+        npc: Derlef
+        data: conv_premier_metier
+      '2':
+      #à faire
+npcs:
+  list:
+    - Bienvenido
+    - John
+  Bienvenido:
+    color: a
+    profession: 3
+    avant: "Il fait un temps merveilleux n'est-ce pas ?"
+    pendant: "Aller va me faire ça !"
+    apres: "Merci d'avoir fait tout ça !"
+    pos:
+      x: 33.5
+      y: 4
+      z: -23.5
+      w: 50
+      p: 3
+  John:
+    color: a
+    profession: 1
+    avant: "HGFJZZFFZGZHGZFHZ"
+    pendant: "Comme dirait le sage Hodor, fait ça"
+    apres: "gnnnnnnnnnnnn merci"
+    pos:
+      x: 28.5
+      y: 4
+      z: -23.5
+      w: 50
+      p: 3
+dialogs:
+  discours-bienvenue:
+    - "§aBonjour et bienvenue sur le monde du MMORPG"
+    - "§aJe vais t'expliquer le système des quêtes..."
+    - "§aCommence par parler à §6Jhonn §amon camarade !"
+  savati:
+    - "§aYoupi je suis totalement fou !"
+    - "§aJ'aime baiser des chèvres !"
