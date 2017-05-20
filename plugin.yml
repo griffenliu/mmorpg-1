@@ -1,8 +1,9 @@
 name: Mmorpg
 version: 0.1.1a
-author: timothe_2000
-main: fr.timothe_2000.Mmorpg.Main
-depend: [ProtocolLib, ArmorEquipEvent]
+author: jamailun
+main: fr.jamailun.Mmorpg.Main
+depend: [ArmorEquipEvent]
+solftdepend: [ProtocolLib]
 commands:
   mmorpg:
     usage: /mmorpg <commande>
